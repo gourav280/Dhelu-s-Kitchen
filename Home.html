@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DK</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+
+    <link rel="icon" href="logo.jpg">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="gg.jpg"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="home.html" target="_blank">HOME</a></li>
+                    <li><a href="about.html" target="_blank">ABOUT</a></li>
+                    <li><a href="Login.html" target="_blank">Login</a></li>
+                    <li><a href="Sign up.html" target="_blank">Sign up</a></li>
+                    <li><a href="contact.html" target="_blank">CONTACT</a></li>    
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Welcome to Dhelu's Kitchen</h1>
+            <p>Yaha pe aane k liye thanks aur website explore karo aur rating kariye </p>
+            <a href="menu.html" target="_blank" class="hero-btn">Menu dekhne k liye press kare</a>
+        </div>
+        <div class="icons">
+            <a class="btn" href="">
+            <i class="fa fa-facebook-official"></i>
+            </a>
+            <a class="btn" href="">
+            <i class="fa fa-instagram"></i>
+            </a>
+            <a class="btn" href="">
+            <i class="fa fa-youtube-play" ></i>
+            </a>
+        </div>
+    </section>
+
+<!------------Javascript for toggel menu--------->
+
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showmenu(){
+        navLinks.style.right =  "0"
+    }
+    function hidemenu(){
+        navLinks.style.right =  "-200px"
+    }
+</script>
+
+</body>    
+</html>
