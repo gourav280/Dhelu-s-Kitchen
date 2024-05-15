@@ -15,5 +15,74 @@
     <a href="https://www.instagram.com/_g.c.sahoo_/"><i class="fa-brands fa-instagram"></i></a>
     <a href=""><i class="fa-brands fa-whatsapp"></i></a>
 <button><a href="home.html" target="_blank">HOME</a></button>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .container { max-width: 800px; margin: 0 auto; padding: 20px; }
+        .header, .footer { text-align: center; }
+        form { display: grid; grid-gap: 10px; }
+        label { font-weight: bold; }
+        input, textarea { width: 100%; padding: 10px; }
+        button { padding: 10px 20px; background-color: #007BFF; color: white; border: none; cursor: pointer; }
+        button:hover { background-color: #0056b3; }
+        .contact-options, .business-hours, .faq { margin: 20px 0; }
+    </style>
+    <div class="container">
+        <div class="header">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you</p>
+        </div>
+        
+        <form action="/submit_contact_form" method="post">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Phone Number (Optional)</label>
+            <input type="tel" id="phone" name="phone">
+            
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+        
+        <div class="contact-options">
+            <h2>Other Ways to Reach Us</h2>
+            <p>Email: <a href="mailto:contact@yourdomain.com">contact@yourdomain.com</a></p>
+            <p>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+            <p>Address: 123 Your Street, Your City, Your Country</p>
+            <p>
+                Follow us:
+                <a href="https://facebook.com/yourprofile" target="_blank">Facebook</a> |
+                <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a> |
+                <a href="https://linkedin.com/yourprofile" target="_blank">LinkedIn</a> |
+                <a href="https://instagram.com/yourprofile" target="_blank">Instagram</a>
+            </p>
+        </div>
+        
+        <div class="business-hours">
+            <h2>Business Hours</h2>
+            <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+            <p>Saturday: 10:00 AM - 4:00 PM</p>
+            <p>Sunday: Closed</p>
+        </div>
+        
+        <div class="faq">
+            <h2>Frequently Asked Questions</h2>
+            <p><strong>Q: How can I track my order?</strong></p>
+            <p>A: You can track your order using the tracking number provided in your confirmation email.</p>
+            <p><strong>Q: What is your return policy?</strong></p>
+            <p>A: We offer a 30-day return policy for unused items in their original packaging.</p>
+        </div>
+        
+        <div class="footer">
+            <p>Your information is safe with us. We do not share your details with third parties.</p>
+        </div>
+    </div>
 </body>
 </html>
